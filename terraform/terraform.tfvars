@@ -1,0 +1,5 @@
+aws_region          = "us-east-1"
+s3_bucket_name      = "trading-bot-bucket"
+dynamodb_table_name = "MarketData"
+secrets_manager_name = "BinanceAPIKeys"
+environment         = "Production"
