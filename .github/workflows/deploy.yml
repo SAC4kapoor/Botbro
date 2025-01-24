@@ -23,7 +23,7 @@ jobs:
       # Install dependencies and package Lambda function
       - name: Install dependencies and package Lambda
         run: |
-          pip install -r lambda/requirements.txt -t lambda/
+          pip install -r ${path.module}/lambda/requirements.txt -t lambda/
           cd lambda && zip -r ../trading-bot.zip . && cd ..
 
       # Upload the ZIP file to S3
