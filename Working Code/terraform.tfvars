@@ -1,0 +1,7 @@
+aws_region          = "us-east-1"
+s3_bucket_name      = "bot-bro-bucket"
+dynamodb_table_name = "MarketData"
+secrets_manager_name = "Binance_API_Secret-2"
+binance_api_key     = "MoZSfTWt3EYpKSJNEOI2OQLR0pCRCSimQYbuYGmd1CD7yEBa5O6LCLlHbbGjqSEb"
+binance_secret_key  = "SIYYO7hDuPnC9ujLqJcEfhCLqvYalWZY5iTyLCCa5fjTobHGxLdi6YhrhtoqvZSO"
+environment         = "Dev"
