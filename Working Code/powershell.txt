@@ -1,0 +1,27 @@
+powershell -NoProfile -Command "& {
+     Set-Location './lambda/fetch_balance';
+     pip install --upgrade pip;
+     pip install -r requirements.txt -t .;
+     Compress-Archive -Path * -DestinationPath './fetch_balance.zip' -Force
+ }"
+
+
+
+
+
+ powershell -NoProfile -Command "& {
+     Set-Location './lambda/market_data';
+     pip install --upgrade pip;
+     pip install -r requirements.txt -t .;
+     Compress-Archive -Path * -DestinationPath './lambda.zip' -Force
+ }"
+
+
+
+# Decision making Lambda Package builder 
+  powershell -NoProfile -Command "& {
+     Set-Location './lambda/decision_making';
+     pip install --upgrade pip;
+     pip install -r requirements.txt -t .;
+     Compress-Archive -Path * -DestinationPath './lambda.zip' -Force
+ }"
